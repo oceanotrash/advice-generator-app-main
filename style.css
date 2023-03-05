@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%)
+
+## Typography
+
+### Body Copy
+
+- Font size (quote): 28px
+
+### Font
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800 */
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    background-color: var(--DarkGrayishBlue);
+    padding: 1.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+}
+
+img
+{
+    max-width: 100%;
+}
+
+p{
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.container
+{
+    background-color: var(--GrayishBlue);
+    padding: 1.5em 1.5rem 2rem;
+    border-radius: 1em;
+    position: relative;
+}
+
+.container h1
+{
+    color: var(--NeonGreen);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 0.7em;
+    margin-bottom: 1rem;
+    
+}
+
+.container p 
+{
+    margin-bottom: 2rem;
+    color: var(--LightCyan);
+}
+
+
+.container picture img
+{
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.container button
+{
+    background-color: var(--NeonGreen);
+    padding: 1.25rem;
+    border: none;
+    border-radius: 50%;
+    transition: background-clor 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container button:hover
+{
+    background-color: hsl(150, 69%, 59%)
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--LightCyan);
+}
+.attribution a {
+  color: hsl(228, 67%, 60%);
+}
+
+
+
+@media(min-width: 500px)
+{
+    .container
+    {
+        max-width: 480px;
+    }
+}
