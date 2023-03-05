@@ -78,7 +78,7 @@ p {
 .container h1 {
   color: var(--NeonGreen);
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   font-size: 0.7em;
   margin-bottom: 1rem;
 }
@@ -94,8 +94,7 @@ p {
   fill: var(--NeonGreen);
 }
 
-picture {
-}
+
 
 .container button {
   background-color: var(--NeonGreen);
